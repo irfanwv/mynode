@@ -1,0 +1,41 @@
+<!-- views/partials/head.ejs -->
+
+<meta charset="UTF-8">
+<title>Super Awesome</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script>
+    
+    window.onload = function() {
+
+    var messages = [];
+    var socket = io.connect('http://localhost:8080');
+    var field = document.getElementById("field");
+    var sendButton = document.getElementById("send");
+    var content = document.getElementById("content");
+
+    socket.on('message', function (data) {
+        if(data.message) {
+            messages.push(data.message);
+            var html = '';
+            for(var i=0; i<messages.length; i++) {
+                html += messages[i] + '<br />';
+            }
+            content.innerHTML = html;
+        } else {
+            console.log("There is a problem:", data);
+        }
+    });
+
+    sendButton.onclick = function() {
+        var text = field.value;
+        socket.emit('send', { message: text });
+    };
+
+}
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<style>
+    body    { padding-top:50px; }
+</style>
