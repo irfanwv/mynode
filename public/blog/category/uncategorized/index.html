@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://trendytheme.net/demo/wp/iamx/xmlrpc.php">
+    <title>Page not found &#8211; Iamx</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel="alternate" type="application/rss+xml" title="Iamx &raquo; Feed" href="http://trendytheme.net/demo/wp/iamx/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Iamx &raquo; Comments Feed" href="http://trendytheme.net/demo/wp/iamx/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-includes\/js\/wp-emoji.js?ver=4.4.4","twemoji":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-includes\/js\/twemoji.js?ver=4.4.4"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' ),
+			stringFromCharCode = String.fromCharCode,
+			tonedata, tone, tone2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( 'flag' === type ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'A' and 'U' in them, if the browser doesn't render flag emoji
+			 * - The Australian flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( stringFromCharCode( 55356, 56806, 55356, 56826 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else if ( 'diversity' === type ) {
+			/*
+			 * This tests if the browser supports the Emoji Diversity specification, by rendering an
+			 * emoji with no skin tone specified (in this case, Santa). It then adds a skin tone, and
+			 * compares if the emoji rendering has changed.
+			 */
+			context.fillText( stringFromCharCode( 55356, 57221 ), 0, 0 );
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+
+			context.fillText( stringFromCharCode( 55356, 57221, 55356, 57343 ), 0, 0 );
+			// Chrome has issues comparing arrays, and Safari has issues converting arrays to strings.
+			// So, we create our own string and compare that, instead.
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+			tone2 = tonedata[0] + ',' + tonedata[1] + ',' + tonedata[2] + ',' + tonedata[3];
+
+			return tone !== tone2;
+		} else {
+			if ( 'simple' === type ) {
+				/*
+				 * This creates a smiling emoji, and checks to see if there is any image data in the
+				 * center pixel. In browsers that don't support emoji, the character will be rendered
+				 * as an empty square, so the center pixel will be blank.
+				 */
+				context.fillText( stringFromCharCode( 55357, 56835 ), 0, 0 );
+			} else {
+				/*
+				 * To check for Unicode 8 support, let's try rendering the most important advancement
+				 * that the Unicode Consortium have made in years: the burrito.
+				 */
+				context.fillText( stringFromCharCode( 55356, 57135 ), 0, 0 );
+			}
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple:    browserSupportsEmoji( 'simple' ),
+		flag:      browserSupportsEmoji( 'flag' ),
+		unicode8:  browserSupportsEmoji( 'unicode8' ),
+		diversity: browserSupportsEmoji( 'diversity' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag || ! settings.supports.unicode8 || ! settings.supports.diversity ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='zilla-likes-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/plugins/tt-plugin/inc/post-likes/styles/zilla-likes.css?ver=4.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-fontawesome-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/font-awesome.min.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-shortcode-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/shortcode.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-flaticon-stroke-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/fonts/flaticon/flaticon.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-bootstrap-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-owl-carousel-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-owl-theme-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/owl.theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-animate-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-magnific-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/magnific-popup.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-stylesheet-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/style.css?ver=4.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-responsive-css-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-custom-style-css'  href='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/custom-style.php' type='text/css' media='all' />
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-includes/js/jquery/jquery-migrate.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var zilla_likes = {"ajaxurl":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/plugins/tt-plugin/inc/post-likes/scripts/zilla-likes.js?ver=4.4.4'></script>
+<link rel='https://api.w.org/' href='http://trendytheme.net/demo/wp/iamx/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://trendytheme.net/demo/wp/iamx/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://trendytheme.net/demo/wp/iamx/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.4" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://trendytheme.net/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://trendytheme.net/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body id="home" class="error404 header-banner-one wpb-js-composer js-comp-ver-4.9.2 vc_responsive" data-spy="scroll" data-target=".navbar" data-offset="100">
+            <div id="preloader" style="background-color: #ffffff">
+            <div id="status">
+                <div class="status-mes" style="background-image: url(http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/images/preloader.gif);"></div>
+            </div>
+        </div>
+    
+    
+    <div class="header-wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mobile-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="navbar-brand">
+                        <h1>
+                            <a href="http://trendytheme.net/demo/wp/iamx/" title="Iamx">
+                                
+                                    <img class="hidden-xs" src="http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/images/logo.png" data-at2x="http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/images/logo2x.png" alt="Iamx"/>
+                                    <img class="visible-xs" src="http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/images/logo.png" data-at2x="http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/images/logo2x.png" alt="Iamx"/>
+                                                            </a>
+                        </h1>
+                    </div> <!-- .navbar-brand -->
+                </div> <!-- .navbar-header -->
+
+                <div class="main-menu-wrapper hidden-xs clearfix">
+                    <div class="main-menu">                   
+                        <ul id="menu-primary-menu" class="menu nav navbar-nav navbar-right"><li id="menu-item-3549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3549  has-menu-child"><a title="Home" href="http://site_url/#home">Home</a></li>
+<li id="menu-item-3550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3550  has-menu-child"><a title="About" href="http://site_url/#about">About</a></li>
+<li id="menu-item-3551" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3551  has-menu-child"><a title="Resume" href="http://site_url/#resume">Resume</a></li>
+<li id="menu-item-3552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3552  has-menu-child"><a title="Skills" href="http://site_url/#skills">Skills</a></li>
+<li id="menu-item-3553" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3553  has-menu-child"><a title="Works" href="http://site_url/#works">Works</a></li>
+<li id="menu-item-3554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3554  has-menu-child"><a title="Blog" href="http://site_url/#blog">Blog</a></li>
+<li id="menu-item-3555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555  has-menu-child"><a title="Contact" href="http://site_url/#contact">Contact</a></li>
+</ul>                    </div>
+                </div> <!-- /navbar-collapse -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="visible-xs">
+                    <div class="mobile-menu collapse navbar-collapse mobile-toggle">
+                        <ul id="menu-primary-menu-1" class="menu nav navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3549  has-menu-child"><a title="Home" href="http://site_url/#home">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3550  has-menu-child"><a title="About" href="http://site_url/#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3551  has-menu-child"><a title="Resume" href="http://site_url/#resume">Resume</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3552  has-menu-child"><a title="Skills" href="http://site_url/#skills">Skills</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3553  has-menu-child"><a title="Works" href="http://site_url/#works">Works</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3554  has-menu-child"><a title="Blog" href="http://site_url/#blog">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555  has-menu-child"><a title="Contact" href="http://site_url/#contact">Contact</a></li>
+</ul>                    </div> <!-- /.navbar-collapse -->
+                </div>
+            </div><!-- .container-->
+        </nav>
+    </div> <!-- .header-wrapper -->
+
+
+
+	<div class="page-header-section" style="background-image: url('http://trendytheme.net/demo/wp/iamx/wp-content/uploads/2015/11/home2.jpg');" role="banner">
+		<div class="tt-overlay"></div>
+		<div class="container">
+			<div class="page-header">
+				<h2>404 Not Found</h2>
+				        <ul class="breadcrumb">
+            <li>
+                <a href="http://trendytheme.net/demo/wp/iamx">Home</a>
+            </li>
+            <li class="active">
+                                404                  
+            </li>
+        </ul>
+    			</div><!-- /.page-header -->
+		</div> <!-- /.container -->
+	</div> <!-- .page-header-section -->
+<div class="error-page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="not-found-icon text-center">
+					<i class="fa fa-dropbox"></i>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="error-message">
+				    <h2>404</h2>
+
+				    <h3>Page Not Found!</h3>
+
+				    <p>Sorry, we couldn&#039;t find the content you were looking for.</p>
+
+				    <a href="http://trendytheme.net/demo/wp/iamx/"><i class="fa fa-reply-all"></i>Go Back Home</a>
+				</div> <!-- /notfound-page -->
+			</div> <!-- .col -->
+		</div> <!-- .row -->
+	</div><!-- /.container -->
+</div> <!-- /.content-wrapper -->
+
+			<!-- Footer Section -->
+		    <footer class="footer-wrapper">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-12">
+					<div class="copyright text-center">
+			        
+					            
+						            &copy; TrendyTheme 2015. All rights reserved.					            
+
+			        					</div>
+		          </div>
+		        </div>
+		      </div>
+		    </footer><!-- End Footer Section -->        
+
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/bootstrap.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?sensor=true'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/coundown-timer.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.shuffle.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/smoothscroll.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.inview.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.easing.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.sticky.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/magnific-popup.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.stellar.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/jquery.placeholder.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/retina.min.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-content/themes/iamx/js/scripts.js'></script>
+<script type='text/javascript' src='http://trendytheme.net/demo/wp/iamx/wp-includes/js/wp-embed.js?ver=4.4.4'></script>
+</body>
+</html>
