@@ -1,5 +1,197 @@
-<title>Mohammad Irfan | PHP Developer | Node Developer | Angular Developer</title>
-<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="xmlrpc.php">
+    <title>Mohammad Irfan | PHP Developer | Node Developer | Angular Developer</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = '../../../../ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel="alternate" type="application/rss+xml" title="Iamx &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Iamx &raquo; Comments Feed" href="comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-includes\/js\/wp-emoji.js?ver=4.4.4","twemoji":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-includes\/js\/twemoji.js?ver=4.4.4"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' ),
+			stringFromCharCode = String.fromCharCode,
+			tonedata, tone, tone2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( 'flag' === type ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'A' and 'U' in them, if the browser doesn't render flag emoji
+			 * - The Australian flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( stringFromCharCode( 55356, 56806, 55356, 56826 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else if ( 'diversity' === type ) {
+			/*
+			 * This tests if the browser supports the Emoji Diversity specification, by rendering an
+			 * emoji with no skin tone specified (in this case, Santa). It then adds a skin tone, and
+			 * compares if the emoji rendering has changed.
+			 */
+			context.fillText( stringFromCharCode( 55356, 57221 ), 0, 0 );
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+
+			context.fillText( stringFromCharCode( 55356, 57221, 55356, 57343 ), 0, 0 );
+			// Chrome has issues comparing arrays, and Safari has issues converting arrays to strings.
+			// So, we create our own string and compare that, instead.
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+			tone2 = tonedata[0] + ',' + tonedata[1] + ',' + tonedata[2] + ',' + tonedata[3];
+
+			return tone !== tone2;
+		} else {
+			if ( 'simple' === type ) {
+				/*
+				 * This creates a smiling emoji, and checks to see if there is any image data in the
+				 * center pixel. In browsers that don't support emoji, the character will be rendered
+				 * as an empty square, so the center pixel will be blank.
+				 */
+				context.fillText( stringFromCharCode( 55357, 56835 ), 0, 0 );
+			} else {
+				/*
+				 * To check for Unicode 8 support, let's try rendering the most important advancement
+				 * that the Unicode Consortium have made in years: the burrito.
+				 */
+				context.fillText( stringFromCharCode( 55356, 57135 ), 0, 0 );
+			}
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple:    browserSupportsEmoji( 'simple' ),
+		flag:      browserSupportsEmoji( 'flag' ),
+		unicode8:  browserSupportsEmoji( 'unicode8' ),
+		diversity: browserSupportsEmoji( 'diversity' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag || ! settings.supports.unicode8 || ! settings.supports.diversity ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/stylesc1f9.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='zilla-likes-css'  href='wp-content/plugins/tt-plugin/inc/post-likes/styles/zilla-likesd22c.css?ver=4.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-fontawesome-css'  href='wp-content/themes/iamx/css/font-awesome.min11b8.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-shortcode-css'  href='wp-content/themes/iamx/css/shortcode11b8.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-flaticon-stroke-css'  href='wp-content/themes/iamx/fonts/flaticon/flaticon.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-bootstrap-css'  href='wp-content/themes/iamx/css/bootstrap.mine485.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-owl-carousel-css'  href='wp-content/themes/iamx/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-owl-theme-css'  href='wp-content/themes/iamx/css/owl.theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-animate-css'  href='wp-content/themes/iamx/css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-magnific-css'  href='wp-content/themes/iamx/css/magnific-popup.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-stylesheet-css'  href='wp-content/themes/iamx/styled22c.css?ver=4.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-responsive-css-css'  href='wp-content/themes/iamx/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-custom-style-css'  href='wp-content/themes/iamx/custom-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='wp-content/plugins/js_composer/assets/css/js_composer.min20fd.css?ver=4.9.2' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jqueryc1d8.js?ver=1.11.3'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate1576.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var zilla_likes = {"ajaxurl":"http:\/\/trendytheme.net\/demo\/wp\/iamx\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/tt-plugin/inc/post-likes/scripts/zilla-likesd22c.js?ver=4.4.4'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.4" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://trendytheme.net/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://trendytheme.net/demo/wp/iamx/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1467136222667{background-color: #ffffff !important;}.vc_custom_1467136235256{padding-top: 120px !important;background-color: #ffffff !important;}.vc_custom_1459810557797{padding-top: 50px !important;padding-bottom: 100px !important;background-color: #ffffff !important;}.vc_custom_1467136246705{padding-top: 120px !important;padding-bottom: 100px !important;background-color: #1a1e23 !important;}.vc_custom_1467136374326{padding-top: 120px !important;padding-bottom: 110px !important;background-color: #ffffff !important;}.vc_custom_1467136508118{padding-top: 130px !important;padding-bottom: 100px !important;}.vc_custom_1465280214674{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1467136533390{padding-top: 125px !important;padding-bottom: 100px !important;}.vc_custom_1459716795561{margin-top: 100px !important;margin-bottom: 100px !important;}.vc_custom_1465200538374{margin-top: 50px !important;margin-bottom: 100px !important;}.vc_custom_1462078468210{background-image: url(../../../../localhost/iamx/wp-content/uploads/2016/01/Candidate-political38ef.html?id=2928) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1459746613009{background-color: #ffffff !important;}.vc_custom_1465201911551{padding-bottom: 35px !important;}.vc_custom_1465202259125{padding-top: 10px !important;padding-bottom: 30px !important;}.vc_custom_1459875720144{padding-bottom: 50px !important;}.vc_custom_1462435414479{padding-top: 115px !important;padding-bottom: 115px !important;}.vc_custom_1460851505925{margin-bottom: 50px !important;}.vc_custom_1460352398196{margin-bottom: 30px !important;}.vc_custom_1460353252369{margin-bottom: 50px !important;}.vc_custom_1464627285804{margin-bottom: 40px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
