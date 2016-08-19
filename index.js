@@ -31,9 +31,9 @@ app.get('/', function(request, response) {
 
 app.get('/send',function(req,res){
     var mailOptions={
-        to : req.query.to,
-        subject : req.query.subject,
-        text : req.query.text
+        to : 'mohammad.irfan@widevision.co.in', //req.query.to,
+        subject :'node test',  // req.query.subject,
+        text : 'test'   // req.query.text
     }
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function(error, response){
