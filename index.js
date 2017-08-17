@@ -31,7 +31,7 @@ app.get('/', function(request, response) {
 
 app.get('/send',function(req,res){
     var mailOptions={
-        to : 'mohammad.irfan@widevision.co.in', //req.query.to,
+        to : 'mohdirfan11@gmail.com', //req.query.to,
         subject :'node test',  // req.query.subject,
         text : 'test'   // req.query.text
     }
